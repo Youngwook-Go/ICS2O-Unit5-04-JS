@@ -18,6 +18,20 @@ if (navigator.serviceWorker) {
 
 // function description
 
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+function update() {
+  
+  // input
+  const age = parseInt(document.getElementById("age").value)
+  const day = parseInt(document.getElementById("day").value)
+
+  // output
+  if ((day == 3 || day == 5) || (age > 12 && age < 21))
+  {
+    document.getElementById("answer").innerHTML =
+      "You get in for free"
+  } 
+  else {
+    document.getElementById("answer").innerHTML =
+      "You must pay admission"
+  }
 }
