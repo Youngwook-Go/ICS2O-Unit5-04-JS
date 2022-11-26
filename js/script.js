@@ -16,7 +16,7 @@ if (navigator.serviceWorker) {
   })
 }
 
-// function description
+// this fuction gets user age and the day of the week for answer properly
 
 function update() {
   // input
